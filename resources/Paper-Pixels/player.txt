@@ -1,0 +1,22 @@
+{
+    texture: Paper-Pixels/Player.png
+    texture_size: 104, 136
+    loop: true
+    delay: 0.1
+    frame_size: 8, 8
+    size: 1, 1
+    
+    [IDLE] {
+        position: 0, 56
+        frame_count: 4
+    }
+    [RUN] {
+        position: 0, 8
+        frame_count: 8
+    }
+
+    [JUMP] {
+        position: 16, 80
+        frame_count: 1
+    }
+}

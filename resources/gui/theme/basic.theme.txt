@@ -5,7 +5,7 @@
     [label] {
         [menu_menu_title] {
             font: gui/theme/Roboto-Black.ttf
-            size: 150
+            size: 50
         }
     }
     [button.forground] {

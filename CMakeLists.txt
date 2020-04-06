@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
-project(JamTemplate)
+project(PaperChallange)
 
 set(SP2_PATH "../SeriousProton2" CACHE STRING "Path to SeriousProton2 sources")
 get_filename_component(SP2_PATH ${SP2_PATH} ABSOLUTE)

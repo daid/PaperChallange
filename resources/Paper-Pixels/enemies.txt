@@ -1,0 +1,45 @@
+{
+    texture: Paper-Pixels/Enemies.png
+    texture_size: 224, 112
+    loop: true
+    delay: 0.1
+    frame_size: 8, 8
+    size: 1, 1
+    
+    [BEE] {
+        position: 32, 16
+        frame_count: 4
+    }
+    [SHROOM] {
+        position: 32, 24
+        frame_count: 4
+    }
+    [SHROOM2] {
+        position: 32, 32
+        frame_count: 4
+    }
+    [SNAKE] {
+        position: 32, 40
+        frame_count: 3
+    }
+    [SNAKE2] {
+        position: 32, 48
+        frame_count: 3
+    }
+    [SLIME] {
+        position: 32, 56
+        frame_count: 5
+    }
+    [THING] {
+        position: 32, 88
+        frame_count: 6
+    }
+    [MOUSE] {
+        position: 32, 96
+        frame_count: 4
+    }
+    [CHICKEN] {
+        position: 32, 104
+        frame_count: 3
+    }
+}

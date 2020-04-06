@@ -1,0 +1,7 @@
+[RESULT] {
+    alignment: center
+    type: label
+    theme_data: menu_menu_title
+    caption: RESULT?!?
+    scale_to_text: true
+}

@@ -1,14 +1,23 @@
 [MAIN_MENU] {
     stretch: true
 
-    [TITLE] {
+    {
         alignment: top
-        type: label
-        theme_data: menu_menu_title
-        caption: Game Title
-        scale_to_text: true
+        layout: vertical
+        [TITLE] {
+            type: label
+            theme_data: menu_menu_title
+            caption: PaperChallange
+            scale_to_text: true
+        }
+        {
+            type: label
+            caption: Click anywhere to\
+                place or remove platforms.
+            scale_to_text: true
+        }
     }
-
+    
     {
         layout: vertical
         alignment: bottom
@@ -22,6 +31,7 @@
         [OPTIONS] {
             @ref: MAIN_BUTTON
             caption: OPTIONS
+            visible: false
         }
 
         [CREDITS] {

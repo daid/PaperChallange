@@ -171,7 +171,7 @@ Scene::Scene()
     backdrop->render_data.order = -100;
     for(int x=0;x<width;x++)
         for(int y=0;y<height;y++)
-            backdrop->setTile(x, y, 18 * 15);
+            backdrop->setTile({x, y}, 18 * 15);
     mapTiles = new sp::Tilemap(getRoot(), "Paper-Pixels/Tiles.png", 1, 1, 144/8, 320/8);
 
     loadLevel();
@@ -265,14 +265,14 @@ void Scene::updateMap()
             if (mapData[x][y])
             {
                 if (!left)
-                    mapTiles->setTile(x, y, 18 * 6 + 3, sp::Tilemap::Collision::Platform);
+                    mapTiles->setTile({x, y}, 18 * 6 + 3, sp::Tilemap::Collision::Platform);
                 else if (!right)
-                    mapTiles->setTile(x, y, 18 * 6 + 6, sp::Tilemap::Collision::Platform);
+                    mapTiles->setTile({x, y}, 18 * 6 + 6, sp::Tilemap::Collision::Platform);
                 else
-                    mapTiles->setTile(x, y, 18 * 6 + 4, sp::Tilemap::Collision::Platform);
+                    mapTiles->setTile({x, y}, 18 * 6 + 4, sp::Tilemap::Collision::Platform);
             }
             else
-                mapTiles->setTile(x, y, -1);
+                mapTiles->setTile({x, y}, -1);
         }
     }
 }
